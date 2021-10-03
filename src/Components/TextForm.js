@@ -31,13 +31,14 @@ export default function TextForm(props) {
             <h1>{props.heading}</h1>            
             <div className="mb-3">
             {/* <label htmlfor="myBox" className="form-label">Example textarea</label> */}
-            <textarea className="form-control" value={text} onChange = {handleOnChange}  style ={{backgroundColor: props.mode==='dark'?'gray':'white', colrt:   props.mode==='dark'?'white':'#042743'}}id="myBox" rows="8"></textarea>
+            <textarea className="form-control" value={text} onChange = {handleOnChange}  style ={{backgroundColor: props.mode==='dark'?'gray':'white', color:   props.mode==='dark'?'white':'#042743'}}id="myBox" rows="8"></textarea>
             </div>
-     <div class="d-flex p-2 bd-highlight">
+     <div className="d-flex align-content-between flex-wrap">
             <button className="btn btn-primary mx-1" onClick={handleUpClick}> Convert to Uppercase</button>
             <button className="btn btn-primary mx-1" onClick={handleloClick}> Convert to Lowercase</button>
             <button className="btn btn-primary mx-1" onClick={clrs}> Clear Text</button>
-     </div>
+    </div>
+     
             {/* <a href = "newText.txt" download>
             <button className="btn btn-dark mx-1"> Download</button>        
             </a> */}
