@@ -27,7 +27,7 @@ function App() {
       else{
         setMode('light');
         document.body.style.background='white'; 
-        showAlert("Dark Mode Disablbled","success");
+        showAlert("Dark Mode Disabled","success");
         document.title = "TextUtils - Light Mode";
       }
   }
